@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      wangshur
+HostName                       ug142.eecg.toronto.edu
+ProcessIdentifier              23881
+ProcessCreationTime_UTC        1616631721
+ProcessCreationTime_Readable   Wed Mar 24 20:22:01 2021 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /nfs/ug/homes-4/w/wangshur/IC6CRN65GP/project/tb_squarer/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Mar 24 20:35:04 2021 EDT
