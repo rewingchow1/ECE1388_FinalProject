@@ -1,9 +1,0 @@
-// VerilogA for ECE1388_Final_Project, input_split, veriloga
-
-`include "constants.vams"
-`include "disciplines.vams"
-
-module input_split;
-
-
-endmodule
