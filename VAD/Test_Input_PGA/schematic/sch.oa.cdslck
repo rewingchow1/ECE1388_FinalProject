@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ewingcho
+HostName                       ug66.eecg.toronto.edu
+ProcessIdentifier              5488
+ProcessCreationTime_UTC        1619038153
+ProcessCreationTime_Readable   Wed Apr 21 16:49:13 2021 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /nfs/ug/homes-4/e/ewingcho/TSMC65_2/VAD/Test_Input_PGA/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Thu Apr 22 16:42:37 2021 EDT
