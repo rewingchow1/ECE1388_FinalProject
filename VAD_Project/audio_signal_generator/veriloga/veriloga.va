@@ -1,0 +1,73 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module audio_signal_generator(clk,vout);
+
+// defining the input/output ports
+input clk;
+electrical clk;
+
+output vout;
+electrical vout;
+
+// constants
+localparam string audio_file = "~/VDS_TEST_AUDIO_44_1_K.txt";
+localparam real clk_threshold = 1.0;
+localparam real signal_rise_time = 10.0p;
+localparam real signal_fall_time = 10.0p;
+localparam real max_step = 1.0u;
+
+
+// useful variables
+integer file_handler;
+integer file_read_code;
+real audio_out;
+
+analog begin
+    
+    // start of the simulation
+    @(initial_step)
+    begin
+        // set the output voltage to 0
+        V(vout) <+ 0;
+        // first we open the output file
+        file_handler = $fopen(audio_file, "r");
+		$strobe("file_handler %d",file_handler);
+		$strobe();
+        // check to see whether the file was opened correctly
+        if (file_handler == 0) 
+        begin
+            $strobe("Could not open the audio file!");
+            $strobe();
+            $stop(0);    
+        end
+    end
+    //end of the simulation
+    @(final_step)
+    begin
+        // close the audio file
+        $fclose(file_handler);
+    end
+    // on the rising edges of the clock
+    @(cross(V(clk) - clk_threshold, +1))
+    begin
+        
+        // read the next audio voltage
+        file_read_code = $fscanf(file_handler,"%f", audio_out);
+
+	if (file_read_code != 1)
+	begin
+	    $strobe("Reached end of audio file!");
+	    $strobe();
+	    $fclose(file_handler);
+	    $stop(0);
+	end   
+    end
+
+    // set the output voltage based on signal value read from audio filr
+    V(vout) <+ transition(audio_out, 0.0, signal_rise_time, signal_fall_time);
+    $bound_step(max_step);
+end
+
+
+endmodule
