@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      deshpa75
+HostName                       ug70.eecg.toronto.edu
+ProcessIdentifier              25036
+ProcessCreationTime_UTC        1621030939
+ProcessCreationTime_Readable   Fri May 14 18:22:19 2021 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /nfs/ug/homes-3/d/deshpa75/CRN65GP_OA/ECE1388_Final_Project/Integrator_V6_sym/schematic/sch.oa.cdslck
+TimeEditLocked                 Fri May 14 18:36:35 2021 EDT
