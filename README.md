@@ -5,7 +5,7 @@ Components                |   Related Directories
 --------------------------|----------------------------------------	
 MATLAB Simulation         |   MATLAB
 Audio Input               |   audio_signal_generator, Resources	
-
+--------------------------|----------------------------------------
 PGA                       |   GainAmplifier_Final , PGA_OpAmp_V2_Block_Diagram	
 Squarer                   |   Squarer, big_transistor	
 Integrator                |   Integrator, Switch	
