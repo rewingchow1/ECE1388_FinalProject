@@ -3,7 +3,7 @@ ECE1388 Final Project
 
 Components                |   Related Directories
 _______________________________________________________________________________________________________________________
-
+	
 MATLAB Simulation         |   MATLAB
 Audio Input               |   audio_signal_generator, Resources
 
